@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="NumberProgressBar">
-        <attr name="progress_current" format="integer"/>
-        <attr name="progress_max" format="integer"/>
+        <attr name="numberProgressBarCurrent" format="integer"/>
+        <attr name="numberProgressBarMax" format="integer"/>
 
-        <attr name="progress_unreached_color" format="color"/>
-        <attr name="progress_reached_color" format="color"/>
+        <attr name="numberProgressBarUnreachedColor" format="color"/>
+        <attr name="numberProgressBarReachedColor" format="color"/>
 
-        <attr name="progress_reached_bar_height" format="dimension"/>
-        <attr name="progress_unreached_bar_height" format="dimension"/>
+        <attr name="numberProgressBarReachedBarHeight" format="dimension"/>
+        <attr name="numberProgressBarUnreachedBarHeight" format="dimension"/>
 
-        <attr name="progress_text_size" format="dimension"/>
-        <attr name="progress_text_color" format="color"/>
+        <attr name="numberProgressBarTextSize" format="dimension"/>
+        <attr name="numberProgressBarTextColor" format="color"/>
 
-        <attr name="progress_text_offset" format="dimension"/>
+        <attr name="numberProgressBarTextOffset" format="dimension"/>
 
-        <attr name="progress_text_visibility" format="enum">
+        <attr name="numberProgressBarTextVisibility" format="enum">
             <enum name="visible" value="0"/>
             <enum name="invisible" value="1"/>
         </attr>
+
+        <attr name="numberProgressBarCustomValue" format="integer"/>
+
+        <attr name="numberProgressBarPrefix" format="string" />
+        <attr name="numberProgressBarSuffix" format="string" />
     </declare-styleable>
 
     <declare-styleable name="Themes">

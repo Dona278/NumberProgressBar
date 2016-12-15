@@ -1,132 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="NumberProgressBar_Default">
+    <style name="NumberProgressBar_Base">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">match_parent</item>
-
-        <item name="progress_max">100</item>
-        <item name="progress_current">0</item>
-
-        <item name="progress_unreached_color">#CCCCCC</item>
-        <item name="progress_reached_color">#3498DB</item>
-
-        <item name="progress_text_size">10sp</item>
-        <item name="progress_text_color">#3498DB</item>
-
-        <item name="progress_reached_bar_height">1.5dp</item>
-        <item name="progress_unreached_bar_height">0.75dp</item>
+        <item name="numberProgressBarMax">100</item>
+        <item name="numberProgressBarCurrent">0</item>
+        <item name="numberProgressBarTextSize">10sp</item>
+        <item name="numberProgressBarReachedBarHeight">1.5dp</item>
+        <item name="numberProgressBarUnreachedBarHeight">0.75dp</item>
     </style>
 
-    <style name="NumberProgressBar_Passing_Green">
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_width">match_parent</item>
-
-        <item name="progress_max">100</item>
-        <item name="progress_current">0</item>
-
-        <item name="progress_unreached_color">#CCCCCC</item>
-        <item name="progress_reached_color">#70A800</item>
-
-        <item name="progress_text_size">10sp</item>
-        <item name="progress_text_color">#70A800</item>
-
-        <item name="progress_reached_bar_height">1.5dp</item>
-        <item name="progress_unreached_bar_height">0.75dp</item>
+    <style name="NumberProgressBar_Default" parent="NumberProgressBar_Base">
+        <item name="numberProgressBarUnreachedColor">#CCCCCC</item>
+        <item name="numberProgressBarReachedColor">#3498DB</item>
+        <item name="numberProgressBarTextColor">#3498DB</item>
     </style>
 
-    <style name="NumberProgressBar_Beauty_Red">
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_width">match_parent</item>
-
-        <item name="progress_max">100</item>
-        <item name="progress_current">0</item>
-
-        <item name="progress_unreached_color">#CCCCCC</item>
-        <item name="progress_reached_color">#FF3D7F</item>
-        <item name="progress_text_size">10sp</item>
-        <item name="progress_text_color">#FF3D7F</item>
-
-        <item name="progress_reached_bar_height">1.5dp</item>
-        <item name="progress_unreached_bar_height">0.75dp</item>
+    <style name="NumberProgressBar_Passing_Green" parent="NumberProgressBar_Base">
+        <item name="numberProgressBarUnreachedColor">#CCCCCC</item>
+        <item name="numberProgressBarReachedColor">#70A800</item>
+        <item name="numberProgressBarTextColor">#70A800</item>
     </style>
 
-    <style name="NumberProgressBar_Warning_Red">
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_width">match_parent</item>
-
-        <item name="progress_max">100</item>
-        <item name="progress_current">0</item>
-
-        <item name="progress_unreached_color">#CCCCCC</item>
-        <item name="progress_reached_color">#E74C3C</item>
-        <item name="progress_text_size">10sp</item>
-        <item name="progress_text_color">#E74C3C</item>
-
-        <item name="progress_reached_bar_height">1.5dp</item>
-        <item name="progress_unreached_bar_height">0.75dp</item>
+    <style name="NumberProgressBar_Beauty_Red" parent="NumberProgressBar_Base">
+        <item name="numberProgressBarUnreachedColor">#CCCCCC</item>
+        <item name="numberProgressBarReachedColor">#FF3D7F</item>
+        <item name="numberProgressBarTextColor">#FF3D7F</item>
     </style>
 
-    <style name="NumberProgressBar_Relax_Blue">
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_width">match_parent</item>
-
-        <item name="progress_max">100</item>
-        <item name="progress_current">0</item>
-
-        <item name="progress_unreached_color">#CCCCCC</item>
-        <item name="progress_reached_color">#6DBCDB</item>
-        <item name="progress_text_size">10sp</item>
-        <item name="progress_text_color">#6DBCDB</item>
-
-        <item name="progress_reached_bar_height">1.5dp</item>
-        <item name="progress_unreached_bar_height">0.75dp</item>
+    <style name="NumberProgressBar_Warning_Red" parent="NumberProgressBar_Base">
+        <item name="numberProgressBarUnreachedColor">#CCCCCC</item>
+        <item name="numberProgressBarReachedColor">#E74C3C</item>
+        <item name="numberProgressBarTextColor">#E74C3C</item>
     </style>
 
-    <style name="NumberProgressBar_Grace_Yellow">
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_width">match_parent</item>
-
-        <item name="progress_max">100</item>
-        <item name="progress_current">0</item>
-
-        <item name="progress_unreached_color">#CCCCCC</item>
-        <item name="progress_reached_color">#FFC73B</item>
-        <item name="progress_text_size">10sp</item>
-        <item name="progress_text_color">#FFC73B</item>
-
-        <item name="progress_reached_bar_height">1.5dp</item>
-        <item name="progress_unreached_bar_height">0.75dp</item>
+    <style name="NumberProgressBar_Relax_Blue" parent="NumberProgressBar_Base">
+        <item name="numberProgressBarUnreachedColor">#CCCCCC</item>
+        <item name="numberProgressBarReachedColor">#6DBCDB</item>
+        <item name="numberProgressBarTextColor">#6DBCDB</item>
     </style>
 
-    <style name="NumberProgressBar_Funny_Orange">
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_width">match_parent</item>
-
-        <item name="progress_max">100</item>
-        <item name="progress_current">0</item>
-
-        <item name="progress_unreached_color">#CCCCCC</item>
-        <item name="progress_reached_color">#FF530D</item>
-        <item name="progress_text_size">10sp</item>
-        <item name="progress_text_color">#FF530D</item>
-
-        <item name="progress_reached_bar_height">1.5dp</item>
-        <item name="progress_unreached_bar_height">0.75dp</item>
+    <style name="NumberProgressBar_Grace_Yellow" parent="NumberProgressBar_Base">
+        <item name="numberProgressBarUnreachedColor">#CCCCCC</item>
+        <item name="numberProgressBarReachedColor">#FFC73B</item>
+        <item name="numberProgressBarTextColor">#FFC73B</item>
     </style>
 
-    <style name="NumberProgressBar_Twinkle_Night">
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_width">match_parent</item>
+    <style name="NumberProgressBar_Funny_Orange" parent="NumberProgressBar_Base">
+        <item name="numberProgressBarUnreachedColor">#CCCCCC</item>
+        <item name="numberProgressBarReachedColor">#FF530D</item>
+        <item name="numberProgressBarTextColor">#FF530D</item>
+    </style>
 
-        <item name="progress_max">100</item>
-        <item name="progress_current">0</item>
-
-        <item name="progress_unreached_color">#CCCCCC</item>
-        <item name="progress_reached_color">#ECF0F1</item>
-        <item name="progress_text_size">10sp</item>
-        <item name="progress_text_color">#ECF0F1</item>
-
-        <item name="progress_reached_bar_height">1.5dp</item>
-        <item name="progress_unreached_bar_height">0.75dp</item>
+    <style name="NumberProgressBar_Twinkle_Night" parent="NumberProgressBar_Base">
+        <item name="numberProgressBarUnreachedColor">#CCCCCC</item>
+        <item name="numberProgressBarReachedColor">#ECF0F1</item>
+        <item name="numberProgressBarTextColor">#ECF0F1</item>
     </style>
 </resources>
