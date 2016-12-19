@@ -1,5 +1,4 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:custom="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -15,51 +14,49 @@
         android:id="@+id/numberbar1"
         style="@style/NumberProgressBar_Default"
         android:padding="20dp"
-        custom:numberProgressBarCurrent="0"/>
+        custom:numberProgressBarCurrent="0" />
 
     <com.daimajia.numberprogressbar.NumberProgressBar
         android:id="@+id/numberbar2"
         style="@style/NumberProgressBar_Passing_Green"
         android:padding="20dp"
-        custom:numberProgressBarCurrent="20"/>
+        custom:numberProgressBarCurrent="20" />
 
     <com.daimajia.numberprogressbar.NumberProgressBar
         android:id="@+id/numberbar3"
         style="@style/NumberProgressBar_Relax_Blue"
         android:layout_margin="20dp"
-        custom:numberProgressBarCurrent="30"/>
+        custom:numberProgressBarCurrent="30" />
 
     <com.daimajia.numberprogressbar.NumberProgressBar
         android:id="@+id/numberbar4"
         style="@style/NumberProgressBar_Grace_Yellow"
         android:layout_margin="20dp"
-        custom:numberProgressBarCurrent="40"/>
+        custom:numberProgressBarCurrent="40" />
 
     <com.daimajia.numberprogressbar.NumberProgressBar
         android:id="@+id/numberbar5"
         style="@style/NumberProgressBar_Warning_Red"
         android:layout_margin="20dp"
-        custom:numberProgressBarCurrent="50"/>
+        custom:numberProgressBarCurrent="50" />
 
     <com.daimajia.numberprogressbar.NumberProgressBar
         android:id="@+id/numberbar6"
         style="@style/NumberProgressBar_Funny_Orange"
         android:layout_margin="20dp"
-        custom:numberProgressBarCurrent="60"/>
+        custom:numberProgressBarCurrent="60" />
 
     <com.daimajia.numberprogressbar.NumberProgressBar
         android:id="@+id/numberbar7"
-        style="@style/NumberProgressBar_Beauty_Red"
+        style="@style/NumberProgressBar_Twinkle_Night"
         android:layout_margin="20dp"
-        custom:numberProgressBarCurrent="8"
-        custom:numberProgressBarMax="10"
-        custom:numberProgressBarSuffix="step"/>
+        custom:numberProgressBarCurrent="80" />
 
     <com.daimajia.numberprogressbar.NumberProgressBar
         android:id="@+id/numberbar8"
-        style="@style/NumberProgressBar_Twinkle_Night"
+        style="@style/NumberProgressBar_Beauty_Red"
         android:layout_margin="20dp"
-        custom:numberProgressBarCurrent="2"
-        custom:numberProgressBarCustomValue="2"
-        custom:numberProgressBarMax="5"/>
+        custom:numberProgressBarCurrent="90"
+        custom:numberProgressBarCustomValue="4.7"
+        custom:numberProgressBarSuffix=" / 5" />
 </LinearLayout>

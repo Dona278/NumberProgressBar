@@ -3,6 +3,7 @@
     <declare-styleable name="NumberProgressBar">
         <attr name="numberProgressBarCurrent" format="integer"/>
         <attr name="numberProgressBarMax" format="integer"/>
+        <attr name="numberProgressBarCustomValue" format="string"/>
 
         <attr name="numberProgressBarUnreachedColor" format="color"/>
         <attr name="numberProgressBarReachedColor" format="color"/>
@@ -20,13 +21,7 @@
             <enum name="invisible" value="1"/>
         </attr>
 
-        <attr name="numberProgressBarCustomValue" format="integer"/>
-
         <attr name="numberProgressBarPrefix" format="string" />
         <attr name="numberProgressBarSuffix" format="string" />
-    </declare-styleable>
-
-    <declare-styleable name="Themes">
-        <attr name="numberProgressBarStyle" format="reference"/>
     </declare-styleable>
 </resources>
