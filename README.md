@@ -1,18 +1,8 @@
-##Android NumberProgressBar [![Build Status](https://travis-ci.org/daimajia/NumberProgressBar.png?branch=master)](https://travis-ci.org/daimajia/NumberProgressBar)
+##Android NumberProgressBar
 
 -----
 
-The NumberProgressBar is a bar, slim and sexy (every man wants! ). 
-
-I decided to do this because I was really tired of android original progress bar. So, I made some change, added more color style for this.
-
-And also you can contribute more color style, or new idea to me.
-
-BTW. My friends also made some other platform's NumberProgressBar：
-
-- [Web-Front](https://github.com/kalasoo/NumberProgressBar) by [kalasoo](https://github.com/kalasoo/NumberProgressBar)
-- [iOS](https://github.com/Ming-Zhe/NumberProgressBar) by [Ming-Zhe](https://github.com/Ming-Zhe/NumberProgressBar)
-- [Windows Phone](https://github.com/s2003zy/NumberProgressBar) by [s2003zy](https://github.com/s2003zy)
+This repository is a fork of original [daimajia/NumberProgressBar](https://github.com/daimajia/NumberProgressBar)
 
 ---
 
@@ -20,54 +10,46 @@ BTW. My friends also made some other platform's NumberProgressBar：
 
 ![NumberProgressBar](http://ww3.sinaimg.cn/mw690/610dc034jw1efyrd8n7i7g20cz02mq5f.gif)
 
-
-[Download Demo](https://github.com/daimajia/NumberProgressBar/releases/download/v1.0/NumberProgressBar-Demo-v1.0.apk)
-
-
 ###Usage
 ----
 
 #### Gradle
 
+Project build.gradle
 ```groovy
-dependencies {
-   compile 'com.daimajia.numberprogressbar:library:1.2@aar'
+allprojects {
+	 repositories {
+		 maven { url "http://dl.bintray.com/dona278/maven/" }
+	 }
 }
 ```
 
-#### Maven 
-
-```xml
-<dependency>
-    <groupId>com.daimajia.numberprogressbar</groupId>
-    <artifactId>library</artifactId>
-    <version>1.2</version>
-    <type>apklib</type>
-</dependency>
+Module build.gradle
+```groovy
+dependencies {
+   compile "com.daimajia.numberprogressbar:library:1.3@aar"
+}
 ```
 
 Use it in your own code:
 
-```java
-	<com.daimajia.numberprogressbar.NumberProgressBar
-		android:id="@+id/number_progress_bar"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-	/>
+```xml
+<com.daimajia.numberprogressbar.NumberProgressBar
+	android:id="@+id/number_progress_bar"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" />
 ```	
 
 I made some predesign style. You can use them via `style` property.
-
 
 ![Preset color](http://ww1.sinaimg.cn/mw690/610dc034jw1efyslmn5itj20f30k074r.jpg)
 
 Use the preset style just like below:
 
 ```java
-	<com.daimajia.numberprogressbar.NumberProgressBar
-		android:id="@+id/number_progress_bar"
-		style="@style/NumberProgressBar_Default"
-	/>
+<com.daimajia.numberprogressbar.NumberProgressBar
+	android:id="@+id/number_progress_bar"
+	style="@style/NumberProgressBar_Default" />
 ```	
 
 In the above picture, the style is : 
@@ -82,14 +64,6 @@ In the above picture, the style is :
 `NumberProgressBar_Twinkle_Night`
 
 You can get more beautiful color from [kular](https://kuler.adobe.com), and you can also contribute your color style to NumberProgressBar!  
-
-###Build
-
-run `./gradlew assembleDebug` (Mac/Linux)
-
-or
-
-run `gradlew.bat assembleDebug` (Windows)
 
 ###Attributes
 
@@ -113,36 +87,32 @@ The **bar**:
 
 * max progress
 * current progress
+* custom value
+* suffix 
+* prefix
 
 for example, the default style:
 
 ```java
-	<com.daimajia.numberprogressbar.NumberProgressBar
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        
-	        custom:progress_unreached_color="#CCCCCC"
-	        custom:progress_reached_color="#3498DB"
-	        
-	        custom:progress_unreached_bar_height="0.75dp"
-	        custom:progress_reached_bar_height="1.5dp"
-	        
-	        custom:progress_text_size="10sp"
-	        custom:progress_text_color="#3498DB"
-	        custom:progress_text_offset="1dp"
-	        custom:progress_text_visibility="visible"
-	        
-	        custom:progress_max="100"
-	        custom:progress_curent="80"
-	         />
+<com.daimajia.numberprogressbar.NumberProgressBar
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	
+	custom:numberProgressBarUnreachedColor="#CCCCCC"
+	custom:numberProgressBarReachedColor="#3498DB"
+	
+	custom:numberProgressBarUnreachedBarHeight="0.75dp"
+	custom:numberProgressBarReachedBarHeight="1.5dp"
+	
+	custom:numberProgressBarTextSize="10sp"
+	custom:numberProgressBarTextColor="#3498DB"
+	custom:numberProgressBarTextOffset="1dp"
+	custom:numberProgressBarTextVisibility="visible"
+	
+	custom:numberProgressBarMax="100"
+	custom:numberProgressBarCurrent="75"
+	custom:numberProgressBarCustomValue="4" 
+
+	custom:numberProgressBarPrefix="Is "
+	custom:numberProgressBarSuffix="th step"/>
 ```
-
-### About me:
-
-A student in China mainland, I like Google, like Android, like open source, like doing something interesting. :)
-
-If you have some new idea or internship opportunity, please [email me](mailto:daimajia@gmail.com) !
-
-PS: Welcome to visit the site I am maintaining, which is a site to share graceful Android libraries for every Android developer.
-
-Its name is [Moo Droid](http://moodroid.com) :-D , and also welcome submit your beautiful library to [Moo Droid](http://moodroid.com). 
