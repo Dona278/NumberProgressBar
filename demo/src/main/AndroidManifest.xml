@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.daimajia.numberprogressbar.example" >
+    package="com.dona278.numberprogressbar.example" >
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.daimajia.numberprogressbar.example.MainActivity"
+            android:name="com.dona278.numberprogressbar.example.MainActivity"
             android:label="NumberProgressBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

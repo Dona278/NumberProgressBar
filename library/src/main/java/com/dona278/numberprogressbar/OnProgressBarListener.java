@@ -1,4 +1,4 @@
-package com.daimajia.numberprogressbar;
+package com.dona278.numberprogressbar;
 
 /**
  * Created by lelexxx on 15-4-23.

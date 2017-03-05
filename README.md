@@ -27,14 +27,14 @@ allprojects {
 Module build.gradle
 ```groovy
 dependencies {
-   compile "com.daimajia.numberprogressbar:library:1.3@aar"
+   compile "com.dona278.numberprogressbar:library:1.0@aar"
 }
 ```
 
 Use it in your own code:
 
 ```xml
-<com.daimajia.numberprogressbar.NumberProgressBar
+<com.dona278.numberprogressbar.NumberProgressBar
 	android:id="@+id/number_progress_bar"
 	android:layout_width="wrap_content"
 	android:layout_height="wrap_content" />
@@ -46,8 +46,8 @@ I made some predesign style. You can use them via `style` property.
 
 Use the preset style just like below:
 
-```java
-<com.daimajia.numberprogressbar.NumberProgressBar
+```xml
+<com.dona278.numberprogressbar.NumberProgressBar
 	android:id="@+id/number_progress_bar"
 	style="@style/NumberProgressBar_Default" />
 ```	
@@ -93,8 +93,8 @@ The **bar**:
 
 for example, the default style:
 
-```java
-<com.daimajia.numberprogressbar.NumberProgressBar
+```xml
+<com.dona278.numberprogressbar.NumberProgressBar
 	android:layout_width="match_parent"
 	android:layout_height="wrap_content"
 	

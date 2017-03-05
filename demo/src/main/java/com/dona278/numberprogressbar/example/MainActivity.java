@@ -1,30 +1,30 @@
-package com.daimajia.numberprogressbar.example;
+package com.dona278.numberprogressbar.example;
 
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.daimajia.numberprogressbar.NumberProgressBar;
-import com.daimajia.numberprogressbar.OnProgressBarListener;
+import com.dona278.numberprogressbar.NumberProgressBar;
+import com.dona278.numberprogressbar.OnProgressBarListener;
 
 import java.util.Timer;
 import java.util.TimerTask;
 
 
-public class MainActivity extends ActionBarActivity implements OnProgressBarListener {
+public class MainActivity extends AppCompatActivity implements OnProgressBarListener {
     private Timer timer;
 
-    private NumberProgressBar bnp;
+    private NumberProgressBar numberProgressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        bnp = (NumberProgressBar) findViewById(R.id.numberbar1);
-        bnp.setOnProgressBarListener(this);
+        numberProgressBar = (NumberProgressBar) findViewById(R.id.numberbar1);
+        numberProgressBar.setOnProgressBarListener(this);
         timer = new Timer();
         timer.schedule(new TimerTask() {
             @Override
@@ -32,7 +32,7 @@ public class MainActivity extends ActionBarActivity implements OnProgressBarList
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        bnp.incrementProgressBy(1);
+                        numberProgressBar.incrementProgressBy(1);
                     }
                 });
             }
@@ -68,7 +68,7 @@ public class MainActivity extends ActionBarActivity implements OnProgressBarList
     public void onProgressChange(int current, int max) {
         if (current == max) {
             Toast.makeText(getApplicationContext(), getString(R.string.finish), Toast.LENGTH_SHORT).show();
-            bnp.setProgress(0);
+            numberProgressBar.setProgress(0);
         }
     }
 }

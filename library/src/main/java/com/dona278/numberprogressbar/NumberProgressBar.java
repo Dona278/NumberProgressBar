@@ -1,4 +1,4 @@
-package com.daimajia.numberprogressbar;
+package com.dona278.numberprogressbar;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -13,11 +13,12 @@ import android.view.View;
 
 import java.util.Locale;
 
-import static com.daimajia.numberprogressbar.NumberProgressBar.ProgressTextVisibility.Invisible;
-import static com.daimajia.numberprogressbar.NumberProgressBar.ProgressTextVisibility.Visible;
+import static com.dona278.numberprogressbar.NumberProgressBar.ProgressTextVisibility.Invisible;
+import static com.dona278.numberprogressbar.NumberProgressBar.ProgressTextVisibility.Visible;
 
 /**
  * Created by daimajia on 14-4-30.
+ * Refactored by Dona278 since 16-12-15
  */
 public class NumberProgressBar extends View {
     /**
@@ -179,7 +180,7 @@ public class NumberProgressBar extends View {
 
         // Load styled attributes.
         final TypedArray attributes = context.getTheme().obtainStyledAttributes(attrs, R.styleable.NumberProgressBar,
-                defStyleAttr, 0);
+            defStyleAttr, 0);
 
         int textVisible = attributes.getInt(R.styleable.NumberProgressBar_numberProgressBarTextOffset, PROGRESS_TEXT_VISIBLE);
         if (textVisible != PROGRESS_TEXT_VISIBLE) {
@@ -367,7 +368,7 @@ public class NumberProgressBar extends View {
     }
 
     public void setCustomValue(String customValue) {
-        if(customValue == null) {
+        if (customValue == null) {
             customValue = "";
         }
 
